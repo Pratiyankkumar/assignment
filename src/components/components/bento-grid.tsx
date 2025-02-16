@@ -3,23 +3,24 @@
 import type React from "react";
 import { motion } from "framer-motion";
 import { Card, CardContent } from "@/components/ui/card";
-import { ChartBar, ChartPie } from "@phosphor-icons/react";
 import { Cog, UserCircle } from "lucide-react";
 import { BorderBeam } from "../magicui/border-beam";
 import RadarTargetingCard from "./radar-tragetting-card";
+import BarGraph3D from "./bar-graph";
+import PieChart3D from "./pie-charts";
 
 export default function BentoGrid() {
   return (
-    <div className="min-h-screen bg-transparent p-6">
-      <div className="mx-auto max-w-7xl">
-        <div className="grid grid-cols-3 gap-6 h-[800px]">
+    <div className="min-h-screen w-full flex justify-center items-center bg-transparent p-6">
+      <div className=" max-w-7xl">
+        <div className="grid grid-cols-3 gap-6 h-[800px] place-items-center">
           {/* Left side card */}
-          <Card className="h-[70%] bg-gradient-to-br from-[#2E3139] to-[#1E2536] overflow-hidden relative group">
+          <Card className="h-[70%]  w-[350px] bg-gradient-to-br from-[#2E3139] to-[#1E2536] overflow-hidden relative group">
             <div className="relative h-full bg-gradient-to-br from-[#2E3139] to-[#1E2536] rounded-xl overflow-hidden border-0">
               <BorderBeam
                 duration={6}
                 delay={3}
-                size={1000}
+                size={700}
                 className="from-transparent via-blue-500 to-transparent"
               />
               {/* Radar Effect */}
@@ -194,14 +195,25 @@ export default function BentoGrid() {
                         }}
                         className="drop-shadow-[0_0_10px_#7586B4] filter"
                       >
-                        <ChartBar className="w-24 h-24 text-[#7586B4]" />
+                        <BarGraph3D />
                       </motion.div>
                     </div>
                   </div>
 
                   {/* Static Pie Chart */}
-                  <div className="p-3 relative rounded-xl bg-[rgba(59,67,88)]">
-                    <ChartPie className="w-24 h-24 text-[#7586B4] drop-shadow-[0_0_10px_#7586B4]" />
+                  <div className="w-[124px] h-[124px] flex items-center justify-center relative rounded-xl bg-[rgba(59,67,88)]">
+                    {/* Animated Bar Graph */}
+                    <motion.div
+                      animate={{ y: [0, -10, 0] }}
+                      transition={{
+                        repeat: Infinity,
+                        duration: 1.5,
+                        ease: "easeInOut",
+                      }}
+                      className="drop-shadow-[0_0_10px_#7586B4] filter"
+                    >
+                      <PieChart3D />
+                    </motion.div>
                   </div>
                 </div>
 

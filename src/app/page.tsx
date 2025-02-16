@@ -196,7 +196,7 @@ export default function Home() {
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 16 16"
               id="Youtube"
-              className="w-[20%] h-[20%]"
+              className="w-[16%] h-[16%] "
             >
               <g
                 fillRule="evenodd"
