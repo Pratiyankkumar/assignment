@@ -412,24 +412,24 @@ export default function Home() {
               name="Brand Director at a Tech Startup"
             />
             <Grid2
-              text="We used to struggle with consistent branding across platforms. adTask’s unified dashboard ensures our message stays on point every single time"
-              name="Brand Director at a Tech Startup"
+              text="Unlock actionable data to guide every decision. Stay ahead of trends, refine your strategies, and make confident moves with powerful analytics."
+              name="Digital Strategist at a SaaS Company"
             />
             <Grid2
-              text="We used to struggle with consistent branding across platforms. adTask’s unified dashboard ensures our message stays on point every single time"
-              name="Brand Director at a Tech Startup"
+              text="adTask turned our complicated campaigns into a breeze. The built-in AI agents helped us reach exactly the customers we wanted—without guesswork!"
+              name="Head of Growth at a Tech Startup"
             />
             <Grid2
-              text="We used to struggle with consistent branding across platforms. adTask’s unified dashboard ensures our message stays on point every single time"
-              name="Brand Director at a Tech Startup"
+              text="adTask made everything from campaign setup to performance tracking simple. Our team can now focus on creating great content rather than crunching numbers."
+              name="Social Media Lead at a Non-Profit Organization"
             />
             <Grid2
-              text="We used to struggle with consistent branding across platforms. adTask’s unified dashboard ensures our message stays on point every single time"
-              name="Brand Director at a Tech Startup"
+              text="We've tried other platforms before, but none delivered the depth of insights adTask offers. Our conversion rates are up by 35% since we signed on!"
+              name="Ecommerce Manager at a Home Décor Brand"
             />
             <Grid2
-              text="We used to struggle with consistent branding across platforms. adTask’s unified dashboard ensures our message stays on point every single time"
-              name="Brand Director at a Tech Startup"
+              text="We've seen a 50% boost in engagement across our social channels since switching to adTask. Its AI-driven insights are game-changing!"
+              name=" Social Media Manager at a Fitness Brand"
             />
           </div>
         </div>

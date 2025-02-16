@@ -99,10 +99,10 @@ export default function BentoGrid() {
 
               {/* Card Content */}
               <div className="absolute bottom-0 w-full p-6 bg-gradient-to-t from-black/60 to-transparent">
-                <h3 className="text-2xl font-bold text-white">
+                <h3 className="text-[16px] text-white">
                   Reach Target Audience
                 </h3>
-                <p className="text-gray-400">
+                <p className="text-gray-400 text-sm">
                   Pinpoint the perfect audience with precision. Our AI-driven
                   targeting ensures every message resonates where it matters
                   most.
@@ -152,7 +152,7 @@ export default function BentoGrid() {
                     </div>
 
                     {/* Glowing Line Positioned at Right Center */}
-                    <div className="w-32 h-[2px] absolute -right-[115px] top-1/2 -translate-y-1/2 bg-gradient-to-r from-transparent via-[#7586B4] to-transparent shadow-[0_0_10px_#7586B4]"></div>
+                    <div className="w-28 h-[1px] absolute -right-[107px] top-1/2 -translate-y-1/2 bg-[#7586B4]  shadow-[0_0_10px_#7586B4]"></div>
 
                     {/* "Gen AI Powered" Text Positioned Above the Line */}
                     <div className="absolute -right-[95px] top-[calc(50%-14px)] -translate-y-1/2 text-[#7586B4] text-[10px] font-light">
@@ -161,13 +161,13 @@ export default function BentoGrid() {
                   </div>
                 </div>
                 <div className="mt-4 space-y-2">
-                  <h3 className="text-xl font-bold text-white">
-                    Smart Marketing Insights
+                  <h3 className="text-[16px] text-white">
+                    Marketing made Easier
                   </h3>
                   <p className="text-sm text-gray-400">
-                    Unlock actionable data to guide every decision. Stay ahead
-                    of trends, refine your strategies, and make confident moves
-                    with powerful analytics.
+                    Save time and simplify campaign management. Let automated
+                    workflows handle the heavy lifting, so you can focus on
+                    creativity.
                   </p>
                 </div>
               </CardContent>
@@ -218,12 +218,13 @@ export default function BentoGrid() {
                 </div>
 
                 <div className="mt-4 space-y-2">
-                  <h3 className="text-xl font-bold text-white">
-                    Data Analytics Dashboard
+                  <h3 className="text-[16px] text-white">
+                    Smart Marketing Insights
                   </h3>
                   <p className="text-sm text-gray-400">
-                    Gain real-time insights, track performance, and optimize
-                    strategies with dynamic data visualization.
+                    Unlock actionable data to guide every decision. Stay ahead
+                    of trends, refine your strategies, and make confident moves
+                    with powerful analytics.
                   </p>
                 </div>
               </CardContent>
