@@ -447,7 +447,7 @@ export default function Home() {
               <span>Contact us</span>
             </HoverBorderGradient>
           </div>
-          <div className="w-[80%] mt-10 mb-10 gap-20 flex flex-row items-center justify-evenly">
+          <div className="w-[80%] mt-10  mb-10 gap-20 flex flex-row items-center justify-evenly">
             <div className="flex  flex-col ">
               <p className="text-4xl font-light">Ask whatever you have</p>
               <p className="text-4xl bg-gradient-to-b from-[#8096D2] to-[#b7b9be] bg-clip-text text-transparent font-light leading-tight">
@@ -474,18 +474,27 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="flex gap-4 flex-col">
+            <div className="flex  gap-4 flex-col">
               <div className="flex flex-col">
                 <p className="font-light text-sm">Name</p>
-                <input className="w-[500px] text-sm pl-3 bg-transparent border-[1px] mt-2 h-[35px] text-white border-[#333B4F] rounded-md" />
+                <input
+                  className="w-[500px] text-sm pl-3 bg-transparent border-[1px] mt-2 h-[35px] text-white border-[#333B4F] rounded-md focus:outline-none focus:border-[#8096D2]"
+                  style={{ zIndex: 50, position: "relative" }}
+                />
               </div>
               <div className="flex flex-col">
                 <p className="font-light text-sm">Email</p>
-                <input className="w-[500px] bg-transparent text-sm pl-3 border-[1px] mt-2 h-[35px] text-white border-[#333B4F] rounded-md" />
+                <input
+                  className="w-[500px] text-sm pl-3 bg-transparent border-[1px] mt-2 h-[35px] text-white border-[#333B4F] rounded-md focus:outline-none focus:border-[#8096D2]"
+                  style={{ zIndex: 50, position: "relative" }}
+                />
               </div>
               <div className="flex flex-col">
                 <p className="font-light text-sm">Message</p>
-                <input className="w-[500px] bg-transparent text-sm pl-3 border-[1px] mt-2 h-[100px] text-white border-[#333B4F] rounded-md" />
+                <input
+                  className="w-[500px] text-sm pl-3 bg-transparent border-[1px] mt-2 h-[100px] text-white border-[#333B4F] rounded-md focus:outline-none focus:border-[#8096D2]"
+                  style={{ zIndex: 50, position: "relative" }}
+                />
               </div>
 
               <motion.button

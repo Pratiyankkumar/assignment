@@ -23,7 +23,7 @@ export default function RootLayout({
     <html lang="en" className="dark">
       <body className={`${poppins.className} min-h-screen`}>
         {/* Scrollable Container */}
-        <div className="relative min-h-screen overflow-hidden  bg-gradient-to-b from-black to-[#0C0F16]">
+        <div className="relative min-h-screen overflow-hidden bg-gradient-to-b from-black to-[#0C0F16]">
           {/* Background Grid */}
           <div className="absolute inset-0 pointer-events-none">
             <div
@@ -37,36 +37,26 @@ export default function RootLayout({
             />
           </div>
 
-          {/* Triangle Glow Effect */}
-          <div className="absolute inset-x-0 top-20 z-0">
-            {/* Diffused Triangle Glow */}
-            <div className="absolute left-1/2 -translate-x-1/2">
-              <div
-                className="w-[500px] h-[500px] opacity-80"
-                style={{
-                  background:
-                    "radial-gradient(circle at 50% 20%, rgba(91, 105, 139, 0.8) 25%, rgba(91, 105, 139, 0.5) 50%, transparent 85%)",
-                  clipPath: "polygon(50% 0%, 100% 100%, 0% 100%)",
-                  filter: "blur(200px)", // Increased blur for a soft diffused effect
-                }}
-              />
-            </div>
-
-            {/* Soft Ambient Glow */}
+          {/* Taller Triangle Glow Effect (Moved Upwards by 40px) */}
+          <div className="absolute inset-x-0 top-[-80px] z-0 flex justify-center">
+            {/* Larger Soft Ambient Glow */}
             <div
-              className="absolute left-1/2 -translate-x-1/2
-                w-[900px] h-[700px]
-                bg-gradient-to-b from-[#5B698B]/40 to-transparent
-                blur-[120px]
+              className="w-0 h-0
+                border-l-[450px] border-l-transparent
+                border-r-[450px] border-r-transparent
+                border-b-[900px] border-b-[#5B698B]/40
+                blur-[100px]
                 opacity-50"
             />
 
             {/* Inner Glow for More Softness */}
             <div
-              className="absolute left-1/2 -translate-x-1/2
-                w-[500px] h-[500px]
-                bg-[#5B698B]/50
-                blur-[150px]
+              className="absolute top-[80px]
+                w-0 h-0
+                border-l-[300px] border-l-transparent
+                border-r-[300px] border-r-transparent
+                border-b-[650px] border-b-[#5B698B]/50
+                blur-[120px]
                 opacity-60"
             />
           </div>
