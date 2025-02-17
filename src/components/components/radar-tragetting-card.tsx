@@ -24,7 +24,7 @@ const RadarTargetingCard = () => {
   ];
 
   return (
-    <Card className="h-[70%] w-[350px] bg-gradient-to-br from-[#2E3139] to-[#1E2536] overflow-hidden relative group">
+    <Card className="h-[70%] w-[350px] bp6:-mt-[450px] bg-gradient-to-br from-[#2E3139] to-[#1E2536] overflow-hidden relative group">
       <div className="relative h-full bg-gradient-to-br from-[#2E3139] to-[#1E2536] rounded-xl overflow-hidden border-0">
         <BorderBeam
           duration={6}

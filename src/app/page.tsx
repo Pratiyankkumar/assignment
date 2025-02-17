@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-html-link-for-pages */
 "use client";
 
 import { motion } from "framer-motion";
@@ -83,7 +84,7 @@ export default function Home() {
             className="text-8xl text-center bg-clip-text text-transparent bg-gradient-to-r from-white to-white/50 drop-shadow-[0_0_15px_rgba(255,255,255,0.3)]"
           >
             <motion.span
-              className="text-[#d0d2d8]  text-8xl font-light relative flex space-x-1"
+              className="text-[#d0d2d8] bp3:text-6xl text-8xl font-light relative flex space-x-1"
               onHoverStart={() => setIsHovered(true)}
               onHoverEnd={() => setIsHovered(false)}
             >
@@ -145,8 +146,8 @@ export default function Home() {
         </motion.div>
       </main>
 
-      <div className="min-h-screen mt-14 w-full h-full flex flex-col items-center overflow-hidden relative bg-gradient-to-b from-[#040508] to-[#0C0F15]">
-        <div className="w-[70%] relative flex items-center justify-center bg-black h-[600px] rounded-2xl overflow-hidden">
+      <div className="min-h-screen mt-32 w-full h-full flex flex-col items-center overflow-hidden relative bg-gradient-to-b from-[#040508] to-[#0C0F15]">
+        <div className="w-[70%]  relative flex items-center justify-center bg-black bp4:h-[400px] bp3:h-[350px] h-[600px] rounded-2xl overflow-hidden">
           {/* Animated Border Effects */}
           <BorderBeam
             duration={6}
@@ -173,7 +174,7 @@ export default function Home() {
 
           {/* Text (Behind YouTube Logo) */}
           <motion.span
-            className="text-white text-9xl font-light absolute z-0"
+            className="text-white bp4:text-5xl text-9xl font-light absolute z-0"
             initial={{ textShadow: "0px 0px 0px rgba(91, 105, 139, 0)" }}
             whileHover={{
               textShadow: [
@@ -196,7 +197,7 @@ export default function Home() {
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 16 16"
               id="Youtube"
-              className="w-[16%] h-[16%] "
+              className="w-[16%] h-[16%] bp3:h-[8%] bp3:w-[8%] "
             >
               <g
                 fillRule="evenodd"
@@ -247,7 +248,7 @@ export default function Home() {
           <div className="absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 w-[500px] h-[500px] rounded-full bg-gradient-radial from-[#293249] to-transparent opacity-40 blur-3xl"></div>
 
           {/* Button */}
-          <div className="flex justify-center text-center z-10">
+          <div className="flex justify-center text-center bp1:mt-32 bp4:mt-44 mt-0 z-10">
             <HoverBorderGradient
               containerClassName="rounded-full"
               as="button"
@@ -273,7 +274,9 @@ export default function Home() {
               />
             </div>
             {/* First Line */}
-            <p className="text-5xl font-light">Feature packed to Make</p>
+            <p className="text-5xl bp3:text-xl bp4:text-3xl text-center font-light">
+              Feature packed to Make
+            </p>
 
             {/* Borders (Shifted Further Left & Right) */}
             <div className="relative flex items-center w-full justify-center mt-1">
@@ -282,14 +285,14 @@ export default function Home() {
             </div>
 
             {/* Second Line */}
-            <p className="text-5xl mt-2 bg-gradient-to-b from-[#8096D2] to-[#b7b9be] bg-clip-text text-transparent font-light leading-tight">
+            <p className="text-5xl  bp4:text-3xl bp3:text-xl text-center mt-2 bg-gradient-to-b from-[#8096D2] to-[#b7b9be] bg-clip-text text-transparent font-light leading-tight">
               Digital marketing easier and affordable
             </p>
           </div>
 
           <BentoGrid />
         </div>
-        <div className="flex -mt-24 flex-col bg-transparent bg-gradient-to-b to-[#040508] from-[#0C0F15] justify-center items-center w-full relative">
+        <div className="flex bp6:-mt-48 -mt-24 flex-col bg-transparent bg-gradient-to-b to-[#040508] from-[#0C0F15] justify-center items-center w-full relative">
           {/* Gradient Circle Background */}
           <div className="absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 w-[500px] h-[500px] rounded-full bg-gradient-radial from-[#293249] to-transparent opacity-40 blur-3xl"></div>
 
@@ -307,7 +310,9 @@ export default function Home() {
           {/* Text & Gradient Borders */}
           <div className="w-[70%] flex flex-col mt-8 items-center justify-center relative z-10">
             {/* First Line */}
-            <p className="text-5xl font-light">Innovative Services</p>
+            <p className=" text-5xl bp3:text-xl bp4:text-3xl text-center font-light">
+              Innovative Services
+            </p>
 
             {/* Borders (Shifted Further Left & Right) */}
             <div className="relative flex items-center w-full justify-center mt-1">
@@ -316,12 +321,12 @@ export default function Home() {
             </div>
 
             {/* Second Line */}
-            <p className="text-5xl mt-2 bg-gradient-to-b from-[#8096D2] to-[#b7b9be] bg-clip-text text-transparent font-light leading-tight">
+            <p className="text-5xl bp3:text-xl bp4:text-3xl text-center mt-2 bg-gradient-to-b from-[#8096D2] to-[#b7b9be] bg-clip-text text-transparent font-light leading-tight">
               For Growth
             </p>
           </div>
 
-          <div className="grid grid-cols-3 mt-14 gap-0 mb-10">
+          <div className="grid grid-cols-3 bp1:grid-cols-2 bp6:grid-cols-1 mt-14 gap-0 mb-10">
             <Grid
               title={"Smart Ad Targeting"}
               text={
@@ -414,7 +419,9 @@ export default function Home() {
               />
             </div>
             {/* First Line */}
-            <p className="text-5xl font-light">Trusted By</p>
+            <p className=" text-5xl bp3:text-xl bp4:text-3xl text-center font-light">
+              Trusted By
+            </p>
 
             {/* Borders (Shifted Further Left & Right) */}
             <div className="relative flex items-center w-full justify-center mt-1">
@@ -423,7 +430,7 @@ export default function Home() {
             </div>
 
             {/* Second Line */}
-            <p className="text-5xl mt-2 bg-gradient-to-b from-[#8096D2] to-[#b7b9be] bg-clip-text text-transparent font-light leading-tight">
+            <p className="text-5xl bp3:text-xl bp4:text-3xl text-center mt-2 bg-gradient-to-b from-[#8096D2] to-[#b7b9be] bg-clip-text text-transparent font-light leading-tight">
               Satisfies Clients
             </p>
           </div>
@@ -432,7 +439,7 @@ export default function Home() {
             Discover how we&lsquo;ve driven growth and innovation
           </p>
 
-          <div className="grid grid-cols-3 mt-14 gap-4 mb-10">
+          <div className="grid grid-cols-3 bp1:grid-cols-2 bp6:grid-cols-1 mt-14 gap-4 mb-10">
             <Grid2
               text="We used to struggle with consistent branding across platforms. adTask’s unified dashboard ensures our message stays on point every single time"
               name="Brand Director at a Tech Startup"
@@ -473,9 +480,9 @@ export default function Home() {
               <span>Contact us</span>
             </HoverBorderGradient>
           </div>
-          <div className="w-[80%] mt-10  mb-10 gap-20 flex flex-row items-center justify-evenly">
+          <div className="w-[80%] mt-10  mb-10 gap-20 flex bp7:flex-col flex-row items-center justify-evenly">
             <div className="flex  flex-col relative ">
-              <div className="absolute inset-x-0 top-[-50px] z-0 flex justify-center">
+              <div className="absolute inset-x-0 top-[-50px] z-0 flex  justify-center">
                 {/* Outer Soft Glow - Larger Ellipse */}
                 <div
                   className="absolute w-[400px] h-[200px] bg-[#5B698B]/40 opacity-80 blur-[80px]"
@@ -512,27 +519,49 @@ export default function Home() {
                 <MapPin className="w-6 h-6 text-[#8096D2]" />
                 <p className="font-light  text-sm">San Fransisco bay Area</p>
               </div>
+
+              <div className="bp7:flex mt-8 hidden flex-col ">
+                <p className="font-light text-sm">Name</p>
+                <input
+                  className="w-[500px] bp7:w-[350px] text-sm pl-3 bg-transparent border-[1px] mt-2 h-[35px] text-white border-[#333B4F] rounded-md focus:outline-none focus:border-[#8096D2]"
+                  style={{ zIndex: 50, position: "relative" }}
+                />
+              </div>
+              <div className=" bp7:flex mt-8 hidden flex-col">
+                <p className="font-light text-sm">Email</p>
+                <input
+                  className="w-[500px] bp7:w-[350px] text-sm pl-3 bg-transparent border-[1px] mt-2 h-[35px] text-white border-[#333B4F] rounded-md focus:outline-none focus:border-[#8096D2]"
+                  style={{ zIndex: 50, position: "relative" }}
+                />
+              </div>
+              <div className=" bp7:flex  mt-8 hidden flex-col">
+                <p className="font-light text-sm">Message</p>
+                <input
+                  className="w-[500px] bp7:w-[350px] text-sm pl-3 bg-transparent border-[1px] mt-2 h-[100px] text-white border-[#333B4F] rounded-md focus:outline-none focus:border-[#8096D2]"
+                  style={{ zIndex: 50, position: "relative" }}
+                />
+              </div>
             </div>
 
-            <div className="flex  gap-4 flex-col">
+            <div className="flex bp7:hidden  gap-4 flex-col  ">
               <div className="flex flex-col">
                 <p className="font-light text-sm">Name</p>
                 <input
-                  className="w-[500px] text-sm pl-3 bg-transparent border-[1px] mt-2 h-[35px] text-white border-[#333B4F] rounded-md focus:outline-none focus:border-[#8096D2]"
+                  className="w-[500px] bp7:w-[350px] text-sm pl-3 bg-transparent border-[1px] mt-2 h-[35px] text-white border-[#333B4F] rounded-md focus:outline-none focus:border-[#8096D2]"
                   style={{ zIndex: 50, position: "relative" }}
                 />
               </div>
               <div className="flex flex-col">
                 <p className="font-light text-sm">Email</p>
                 <input
-                  className="w-[500px] text-sm pl-3 bg-transparent border-[1px] mt-2 h-[35px] text-white border-[#333B4F] rounded-md focus:outline-none focus:border-[#8096D2]"
+                  className="w-[500px] bp7:w-[350px] text-sm pl-3 bg-transparent border-[1px] mt-2 h-[35px] text-white border-[#333B4F] rounded-md focus:outline-none focus:border-[#8096D2]"
                   style={{ zIndex: 50, position: "relative" }}
                 />
               </div>
               <div className="flex flex-col">
                 <p className="font-light text-sm">Message</p>
                 <input
-                  className="w-[500px] text-sm pl-3 bg-transparent border-[1px] mt-2 h-[100px] text-white border-[#333B4F] rounded-md focus:outline-none focus:border-[#8096D2]"
+                  className="w-[500px] bp7:w-[350px] text-sm pl-3 bg-transparent border-[1px] mt-2 h-[100px] text-white border-[#333B4F] rounded-md focus:outline-none focus:border-[#8096D2]"
                   style={{ zIndex: 50, position: "relative" }}
                 />
               </div>
@@ -602,7 +631,7 @@ export default function Home() {
             className="text-8xl text-center bg-clip-text text-transparent bg-gradient-to-r from-white to-white/50 drop-shadow-[0_0_15px_rgba(255,255,255,0.3)]"
           >
             <motion.span
-              className="text-[#d0d2d8]  text-8xl font-light relative flex space-x-1"
+              className="text-[#d0d2d8] bp6:text-5xl  text-8xl font-light relative flex space-x-1"
               onHoverStart={() => setIsHovered(true)}
               onHoverEnd={() => setIsHovered(false)}
             >
@@ -639,10 +668,12 @@ export default function Home() {
 
           <div className="w-[70%] flex flex-col mt-16 items-center justify-center relative z-10">
             {/* First Line */}
-            <p className="text-5xl">Are you ready to boost</p>
+            <p className="text-5xl text-center bp6:text-3xl">
+              Are you ready to boost
+            </p>
 
             {/* Second Line */}
-            <p className="text-5xl mt-2 bg-gradient-to-b from-[#8096D2] to-[#b7b9be] bg-clip-text text-transparent leading-tight">
+            <p className="text-5xl text-center bp6:text-3xl mt-2 bg-gradient-to-b from-[#8096D2] to-[#b7b9be] bg-clip-text text-transparent leading-tight">
               your Digital Presence ?
             </p>
           </div>
@@ -689,45 +720,100 @@ export default function Home() {
             </motion.button>
           </div>
           <div className="border-t-[#333B4F] w-[90%] border-[1px] mt-10 "></div>
-          <div className="w-full flex justify-center items-center py-10">
-            <div className="flex flex-row w-[90%] justify-evenly">
-              <div className="flex flex-col gap-4">
-                <p className="text-[#C5CDE3] text-7xl font-light">
+          <footer className="w-full flex flex-row justify-center items-center py-10">
+            <div className="flex flex-row w-[90%] justify-evenly bp2:flex-col-reverse bp2:items-center bp2:gap-8">
+              {/* Brand and Contact Info */}
+              <div className="flex flex-col items-center gap-4">
+                <h2 className="text-[#C5CDE3] bp3:text-5xl text-7xl font-light">
                   ad<span className="font-bold">Task</span>.ai
-                </p>
-                <div className=" flex flex-row gap-3 items-end">
+                </h2>
+                <div className="flex flex-row gap-3 items-end">
                   <Mail className="w-4 h-4 text-[#8096D2]" />
-                  <p className="font-light text-[#C5CDE3] underline  text-sm">
+                  <a
+                    href="mailto:contact@adtask.ai"
+                    className="font-light text-[#C5CDE3] hover:text-[#8096D2] transition-colors underline text-sm"
+                  >
                     contact@adtask.ai
-                  </p>
+                  </a>
                 </div>
-                <div className=" flex flex-row gap-3 items-end">
+                <div className="flex flex-row gap-3 items-end">
                   <MapPin className="w-4 h-4 text-[#8096D2]" />
-                  <p className="font-light  text-[#C5CDE3] text-sm">
-                    San Fransisco bay area
+                  <p className="font-light text-[#C5CDE3] text-sm">
+                    San Francisco bay area
                   </p>
                 </div>
               </div>
-              <div>
-                <p className="text-[#C5CDE3] text-2xl font-bold">Utilities</p>
-                <div className=" flex flex-col text-gray-400 gap-1 items-center">
-                  <p>Home</p>
-                  <p>Product</p>
-                  <p>Tools</p>
-                  <p>Contact Us</p>
+
+              {/* Utilities and Socials Container */}
+              <div className="flex flex-row gap-16 bp3:flex-col bp3:gap-8">
+                {/* Utilities Section */}
+                <div>
+                  <h3 className="text-[#C5CDE3] text-2xl font-bold mb-4">
+                    Utilities
+                  </h3>
+                  <nav className="flex flex-col text-gray-400 gap-1 items-center">
+                    <a
+                      href="/"
+                      className="hover:text-[#8096D2] transition-colors"
+                    >
+                      Home
+                    </a>
+                    <a
+                      href="/product"
+                      className="hover:text-[#8096D2] transition-colors"
+                    >
+                      Product
+                    </a>
+                    <a
+                      href="/tools"
+                      className="hover:text-[#8096D2] transition-colors"
+                    >
+                      Tools
+                    </a>
+                    <a
+                      href="/contact"
+                      className="hover:text-[#8096D2] transition-colors"
+                    >
+                      Contact Us
+                    </a>
+                  </nav>
                 </div>
-              </div>
-              <div>
-                <p className="text-[#C5CDE3] text-2xl font-bold">Socials</p>
-                <div className=" flex flex-col text-gray-400 gap-1 items-center">
-                  <p>X</p>
-                  <p>Linked In</p>
-                  <p>Instagram</p>
-                  <p>Facebook</p>
+
+                {/* Socials Section */}
+                <div>
+                  <h3 className="text-[#C5CDE3] text-2xl font-bold mb-4">
+                    Socials
+                  </h3>
+                  <nav className="flex flex-col text-gray-400 gap-1 items-center">
+                    <a
+                      href="#"
+                      className="hover:text-[#8096D2] transition-colors"
+                    >
+                      X
+                    </a>
+                    <a
+                      href="#"
+                      className="hover:text-[#8096D2] transition-colors"
+                    >
+                      LinkedIn
+                    </a>
+                    <a
+                      href="#"
+                      className="hover:text-[#8096D2] transition-colors"
+                    >
+                      Instagram
+                    </a>
+                    <a
+                      href="#"
+                      className="hover:text-[#8096D2] transition-colors"
+                    >
+                      Facebook
+                    </a>
+                  </nav>
                 </div>
               </div>
             </div>
-          </div>
+          </footer>
         </div>
 
         <div className="w-full flex justify-center text-gray-400 text-sm font-light mb-3 items-center">

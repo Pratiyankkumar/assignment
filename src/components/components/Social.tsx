@@ -12,8 +12,8 @@ export default function GlowingAdSenseCard() {
   const [isHovered5, setIsHovered5] = useState(false);
 
   return (
-    <div className="flex flex-row items-center mt-16 gap-16 justify-center">
-      <div className="relative flex flex-col items-center">
+    <div className="flex w-[98%] flex-row flex-wrap mb-20 items-center mt-16 gap-9 justify-center">
+      <div className="relative flex flex-col flex-wrap items-center">
         {/* Main Card */}
         <motion.div
           className="p-5 rounded-xl z-50 pointer-events-auto border-[2px] border-[#7485B3] bg-transparent relative group cursor-pointer"

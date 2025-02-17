@@ -81,6 +81,15 @@ export default {
         marquee: "marquee var(--duration) infinite linear",
         "marquee-vertical": "marquee-vertical var(--duration) linear infinite",
       },
+      screens: {
+        bp1: { max: "1130px" },
+        bp2: { max: "820px" },
+        bp3: { max: "530px" },
+        bp4: { max: "898px" },
+        bp5: "530px",
+        bp6: { max: "777px" },
+        bp7: { max: "1082px" },
+      },
     },
   },
   plugins: [

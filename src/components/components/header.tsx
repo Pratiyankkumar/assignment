@@ -10,6 +10,7 @@ import {
 } from "@/components/ui/navigation-menu";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
+import { AlignJustify, Phone } from "lucide-react";
 
 const Header = () => {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
@@ -41,7 +42,7 @@ const Header = () => {
           </Link>
         </motion.div>
 
-        <NavigationMenu>
+        <NavigationMenu className="bp2:hidden flex">
           <NavigationMenuList>
             <NavigationMenuItem>
               <NavigationMenuTrigger className="bg-transparent data-[state=open]:bg-transparent hover:bg-transparent data-[state=open]:text-white hover:text-white">
@@ -268,11 +269,13 @@ const Header = () => {
           </NavigationMenuList>
         </NavigationMenu>
 
+        <AlignJustify className="w-6 h-6 bp3:flex hidden" />
+
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.5, delay: 0.2 }}
-          className="flex items-center gap-4"
+          className="bp3:hidden flex items-center gap-4"
         >
           <motion.button
             className="group relative overflow-hidden border-[2px] border-[#5B698B] rounded-full bg-gradient-to-b from-black to-[rgb(65,64,64)] px-8 py-2 text-white backdrop-blur-sm transition-colors hover:bg-[rgba(0,0,0,0.30)]"
@@ -295,12 +298,31 @@ const Header = () => {
           </motion.button>
 
           <motion.button
-            className="group relative border-[2px] border-[#5B698B] overflow-hidden rounded-full bg-gradient-to-b from-[rgb(91,105,139)] to-[#414040] px-8 py-2 text-white backdrop-blur-sm transition-colors hover:bg-[rgba(255,255,255,0.2)]"
+            className="group relative bp1:hidden flex border-[2px] border-[#5B698B] overflow-hidden rounded-full bg-gradient-to-b from-[rgb(91,105,139)] to-[#414040] px-8 py-2 text-white backdrop-blur-sm transition-colors hover:bg-[rgba(255,255,255,0.2)]"
             onMouseMove={handleMouseMove}
             onHoverStart={() => setIsHovered2(true)}
             onHoverEnd={() => setIsHovered2(false)}
           >
             <span className="relative z-10">Schedule a Call</span>
+            {isHovered2 && (
+              <motion.div
+                className="absolute inset-0 z-0"
+                animate={{
+                  background: [
+                    `radial-gradient(40px circle at ${mousePosition.x}px ${mousePosition.y}px, rgba(255,255,255,0.2), transparent 50%)`,
+                  ],
+                }}
+                transition={{ duration: 0.15 }}
+              />
+            )}
+          </motion.button>
+          <motion.button
+            className="group relative bp1:flex hidden border-[2px] border-[#5B698B] overflow-hidden rounded-full bg-gradient-to-b from-[rgb(91,105,139)] to-[#414040] px-8 py-2 text-white backdrop-blur-sm transition-colors hover:bg-[rgba(255,255,255,0.2)]"
+            onMouseMove={handleMouseMove}
+            onHoverStart={() => setIsHovered2(true)}
+            onHoverEnd={() => setIsHovered2(false)}
+          >
+            <Phone className="relative z-10 w-6 h-6" />
             {isHovered2 && (
               <motion.div
                 className="absolute inset-0 z-0"
