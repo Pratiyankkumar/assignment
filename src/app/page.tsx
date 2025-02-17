@@ -259,6 +259,19 @@ export default function Home() {
 
           {/* Text & Gradient Borders */}
           <div className="w-[70%] flex flex-col mt-8 items-center justify-center relative z-10">
+            <div className="absolute inset-x-0 top-[-50px] z-0 flex justify-center">
+              {/* Outer Soft Glow - Larger Ellipse */}
+              <div
+                className="absolute w-[400px] h-[200px] bg-[#5B698B]/40 opacity-80 blur-[80px]"
+                style={{ borderRadius: "50%" }}
+              />
+
+              {/* Inner Glow - Smaller & Brighter Ellipse */}
+              <div
+                className="absolute w-[300px] h-[150px] bg-[#5B698B]/50 opacity-80 blur-[100px]"
+                style={{ borderRadius: "50%" }}
+              />
+            </div>
             {/* First Line */}
             <p className="text-5xl font-light">Feature packed to Make</p>
 
@@ -387,6 +400,19 @@ export default function Home() {
 
           {/* Text & Gradient Borders */}
           <div className="w-[70%] flex flex-col mt-7  items-center justify-center relative z-10">
+            <div className="absolute inset-x-0 top-[-50px] z-0 flex justify-center">
+              {/* Outer Soft Glow - Larger Ellipse */}
+              <div
+                className="absolute w-[400px] h-[200px] bg-[#5B698B]/40 opacity-80 blur-[80px]"
+                style={{ borderRadius: "50%" }}
+              />
+
+              {/* Inner Glow - Smaller & Brighter Ellipse */}
+              <div
+                className="absolute w-[300px] h-[150px] bg-[#5B698B]/50 opacity-80 blur-[100px]"
+                style={{ borderRadius: "50%" }}
+              />
+            </div>
             {/* First Line */}
             <p className="text-5xl font-light">Trusted By</p>
 
@@ -448,7 +474,21 @@ export default function Home() {
             </HoverBorderGradient>
           </div>
           <div className="w-[80%] mt-10  mb-10 gap-20 flex flex-row items-center justify-evenly">
-            <div className="flex  flex-col ">
+            <div className="flex  flex-col relative ">
+              <div className="absolute inset-x-0 top-[-50px] z-0 flex justify-center">
+                {/* Outer Soft Glow - Larger Ellipse */}
+                <div
+                  className="absolute w-[400px] h-[200px] bg-[#5B698B]/40 opacity-80 blur-[80px]"
+                  style={{ borderRadius: "50%" }}
+                />
+
+                {/* Inner Glow - Smaller & Brighter Ellipse */}
+                <div
+                  className="absolute w-[300px] h-[150px] bg-[#5B698B]/50 opacity-80 blur-[100px]"
+                  style={{ borderRadius: "50%" }}
+                />
+              </div>
+
               <p className="text-4xl font-light">Ask whatever you have</p>
               <p className="text-4xl bg-gradient-to-b from-[#8096D2] to-[#b7b9be] bg-clip-text text-transparent font-light leading-tight">
                 In your Mind now
@@ -521,6 +561,40 @@ export default function Home() {
         </div>
 
         <div className="flex w-full pt-32 flex-col bg-gradient-to-b from-[#040508] to-[#0C0F15] bg-transparent justify-center items-center relative">
+          <div className="absolute inset-x-0 top-[-120px] z-0 flex justify-center">
+            {/* Larger Soft Ambient Glow */}
+            <div
+              className="w-0 h-0
+                border-l-[300px] border-l-transparent
+                border-r-[300px] border-r-transparent
+                border-b-[600px] border-b-[#5B698B]/40
+                blur-[100px]
+                opacity-50"
+            />
+
+            {/* Inner Glow for More Softness */}
+            <div
+              className="absolute top-[80px]
+                w-0 h-0
+                border-l-[300px] border-l-transparent
+                border-r-[300px] border-r-transparent
+                border-b-[600px] border-b-[#5B698B]/50
+                blur-[120px]
+                opacity-80"
+            />
+          </div>
+
+          <div className="absolute inset-0 pointer-events-none">
+            <div
+              className="absolute left-1/2 top-[20px] -translate-x-1/2 w-[700px] h-[700px] bg-grid-black/[0.15] dark:bg-grid-white/[0.2] bg-[length:50px_50px]"
+              style={{
+                maskImage:
+                  "radial-gradient(circle, rgba(0,0,0,1) 20%, rgba(0,0,0,0) 60%)",
+                WebkitMaskImage:
+                  "radial-gradient(circle, rgba(0,0,0,1) 20%, rgba(0,0,0,0) 60%)",
+              }}
+            />
+          </div>
           <motion.h1
             initial={{ opacity: 0.3 }}
             animate={{ opacity: 0.3 }}
